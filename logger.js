@@ -32,6 +32,6 @@ const logger = pino(
   transport
 );
 transport.on('error', (err) => {
-  console.error('🚨 Pino Transport Error (Failed to send to Loki):', err);
+  console.error(' Pino Transport Error (Failed to send to Loki):', err);
 });
 module.exports = logger;
